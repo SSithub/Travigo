@@ -5,6 +5,8 @@ Where live agents meet immersive storytelling and 3D navigation
 <img width="1200" height="475" alt="GHBanner" src="" />
 </div>
 
+<br>
+
 ## Project Description
 
 Travigo is a **next-generation AI Agent** that utilizes multimodal inputs and outputs, moving far beyond simple text-in/text-out interactions. The project leverages Google's Gen AI SDK, Gemini Live API, Gemini 3, Google Maps API cloud services with the creative power of generative AI and spatial context to solve complex problems and create entirely new, immersive user experiences in 3D navigation and storytelling.
@@ -25,6 +27,8 @@ The project utilizes a multi-model architecture, leveraging different Gemini mod
 - **gemini-2.5-flash-native-audio-preview**: Used by the Live Agent Orchestrator to power real-time, multimodal conversations via voice and audio streaming.
 - **gemini-2.5-flash**: Used for rapid "Scout" queries, specifically grounding location searches using the Google Maps tool.
 - **gemini-3.1-pro-preview**: Used for complex reasoning tasks via High Thinking levels, such as generating fictional personas based on spatial context and performing deep "Strategic Analysis" (e.g., visa planning, historic deep dives) grounded by Google Search.
+
+<br>
 
 ## Architecture Diagram
 
@@ -102,6 +106,8 @@ graph TD
     
     Story -.->|"Drives"| StreetView
 ```
+
+<br>
 
 ## Test the project Locally
 
