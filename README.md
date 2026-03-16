@@ -5,18 +5,18 @@ Where live agents meet immersive storytelling and 3D navigation
 <img width="1200" height="475" alt="GHBanner" src="" />
 </div>
 
-## Run Locally
+## Test the project Locally
 
 **Prerequisites:**  Node.js
 
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+2. Set the API Keys `GEMINI_API_KEY=''` & `GOOGLE_MAPS_API_KEY=''` in [.env.local](.env.local) to your keys.
 3. Run the app:
    `npm run dev`
 
-## System Architecture
+## Architecture Diagram
 
 ```mermaid
 graph TD
