@@ -116,4 +116,5 @@ graph TD
    `npm install`
 2. Set the API Keys `GEMINI_API_KEY=''` & `GOOGLE_MAPS_API_KEY=''` in [.env.local](.env.local) to your keys.
 3. Run the app:
+   `npm install`
    `npm run dev`
