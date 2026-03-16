@@ -26,17 +26,6 @@ The project utilizes a multi-model architecture, leveraging different Gemini mod
 - **gemini-2.5-flash**: Used for rapid "Scout" queries, specifically grounding location searches using the Google Maps tool.
 - **gemini-3.1-pro-preview**: Used for complex reasoning tasks via High Thinking levels, such as generating fictional personas based on spatial context and performing deep "Strategic Analysis" (e.g., visa planning, historic deep dives) grounded by Google Search.
 
-## Test the project Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the API Keys `GEMINI_API_KEY=''` & `GOOGLE_MAPS_API_KEY=''` in [.env.local](.env.local) to your keys.
-3. Run the app:
-   `npm run dev`
-
 ## Architecture Diagram
 
 ```mermaid
@@ -113,3 +102,14 @@ graph TD
     
     Story -.->|"Drives"| StreetView
 ```
+
+## Test the project Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the API Keys `GEMINI_API_KEY=''` & `GOOGLE_MAPS_API_KEY=''` in [.env.local](.env.local) to your keys.
+3. Run the app:
+   `npm run dev`
