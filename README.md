@@ -15,8 +15,8 @@ Travigo is a **next-generation AI Agent** that utilizes multimodal inputs and ou
 
 ### Technologies Used
 - **Frontend / UI:** Next.js, React, 3D Map & Routing Integration
-- **Backend / Logic:** Agentic System Core, Node.js
-- **APIs:** Google's Live API (Cloud), Google Maps API (Cloud), Gen AI SDK
+- **Backend / Logic:** Agentic System Core (Gen AI SDK), Node.js
+- **APIs:** Google's Live API (Cloud), Google Maps API (Cloud)
 
 ### Models Used
 The project utilizes a multi-model architecture, leveraging different Gemini models using google gen AI SDK depending on the task:
