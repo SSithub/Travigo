@@ -5,6 +5,27 @@ Where live agents meet immersive storytelling and 3D navigation
 <img width="1200" height="475" alt="GHBanner" src="" />
 </div>
 
+## About the Project
+
+Travigo is a **next-generation AI Agent** that utilizes multimodal inputs and outputs, moving far beyond simple text-in/text-out interactions. The project leverages Google's Live API along with the creative power of generative AI and spatial context to solve complex problems and create entirely new, immersive user experiences in 3D navigation and storytelling.
+
+### Features & Functionality
+- **Multimodal Interactions:** Communicate via voice and text while the AI processes real-time visual context from the interactive Street View and 3D map spatial data.
+- **Dynamic Personas:** Choose between Concierge Mode (realistic local guides) and Game Mode (mystical/run-time personas) adapting tone and narrative focus on the fly.
+- **Real-time Context Processing:** Uses a Live Agent Orchestrator to stream dialogue & voice directly tied to user actions and spatial events.
+- **Immersive Storytelling:** Generates contextual narratives overlaid seamlessly onto the UI and 3D environment.
+
+### Technologies Used
+- **Frontend / UI:** Next.js, React, 3D Map & Routing Integration
+- **Backend / Logic:** Agentic System Core, Node.js
+- **APIs:** Google's Live API, Google Maps API
+
+### Models Used
+The project utilizes a multi-model architecture, leveraging different Gemini models depending on the task:
+- **gemini-2.5-flash-native-audio-preview**: Used by the Live Agent Orchestrator to power real-time, multimodal conversations via voice and audio streaming.
+- **gemini-2.5-flash**: Used for rapid "Scout" queries, specifically grounding location searches using the Google Maps tool.
+- **gemini-3.1-pro-preview**: Used for complex reasoning tasks via High Thinking levels, such as generating fictional personas based on spatial context and performing deep "Strategic Analysis" (e.g., visa planning, historic deep dives) grounded by Google Search.
+
 ## Test the project Locally
 
 **Prerequisites:**  Node.js
@@ -55,7 +76,12 @@ graph TD
             P3["� E.g., Spirit of the Landmark (Game)"]:::personaNode
         end
         
-        GenAI["✨ Generative AI Model\n(Gemini API)"]:::agentNode
+        subgraph GenAI["✨ Generative AI Models (Gemini API)"]
+            direction TB
+            FlashAudio["🎙️ gemini-2.5-flash-native-audio-preview\n(Real-time Voice & Audio Streaming)"]:::agentNode
+            FlashScout["🔍 gemini-2.5-flash\n(Rapid Location Grounding)"]:::agentNode
+            ProReason["🧠 gemini-3.1-pro-preview\n(Complex Persona & Strategic Analysis)"]:::agentNode
+        end
     end
 
     %% Immersive Experience Layer
@@ -72,11 +98,13 @@ graph TD
     
     AppModes -->|"Dictates Engine Logic"| Personas
     LA -->|"Selects/Applies via Mode"| Personas
-    Personas -->|"Defines Tone & Focus"| GenAI
-    LA -->|"Sends Real-time Context"| GenAI
+    Personas -->|"Defines Tone & Focus"| ProReason
+    LA -->|"Sends Real-time Context"| FlashAudio
+    LA -->|"Requests Location Data"| FlashScout
+    LA -->|"Requests Deep Analysis"| ProReason
     
-    GenAI -->|"Generates Narrative"| Story
-    GenAI -->|"Generates Real-time Responses"| VoiceText
+    ProReason -->|"Generates Narrative"| Story
+    FlashAudio -->|"Generates Real-time Responses"| VoiceText
     
     Story -->|"Overlays on"| UI
     VoiceText -->|"Streams to"| UI
