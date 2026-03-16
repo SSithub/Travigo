@@ -22,8 +22,8 @@ Travigo is a **next-generation AI Agent** that utilizes multimodal inputs and ou
 The project utilizes a multi-model architecture, leveraging different Gemini models using google gen AI SDK depending on the task:
 - **gemini-2.5-flash-native-audio-preview (live API)**: Used by the Live Agent Orchestrator to power real-time, multimodal conversations via voice and audio streaming.
 - **gemini-2.5-flash**: Used for rapid "Scout" queries, specifically grounding location searches using the Google Maps tool.
-- **gemini-3.1-pro-preview**: Used for complex reasoning tasks via High Thinking levels, such as generating fictional personas based on spatial context and performing deep "Strategic Analysis" (e.g., visa planning, historic deep dives) grounded by Google Search.
-
+- **gemini-3.1-pro-preview**: Used for complex deep reasoning tasks via High Thinking levels, such as planning logistics, tours, generating fictional personas based on spatial context and performing deep "Strategic Analysis" (e.g., visa planning, historic deep dives) grounded by Google Search.
+  
 <br>
 
 ## Architecture Diagram
