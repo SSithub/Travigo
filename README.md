@@ -1,6 +1,8 @@
 # Travigo
 Where live agents meet immersive storytelling and 3D navigation
 
+[![Watch the video](https://img.youtube.com/vi/_pK0ii2bbZg/maxresdefault.jpg)](https://www.youtube.com/watch?v=_pK0ii2bbZg)
+
 <br>
 
 ## Project Description
