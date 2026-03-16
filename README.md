@@ -13,7 +13,7 @@ Travigo is a **next-generation AI Agent** that utilizes multimodal inputs and ou
 
 ### Features & Functionality
 - **Multimodal Interactions:** Communicate via voice and text while the AI processes real-time visual context from the interactive Street View and 3D map spatial data.
-- **Dynamic Personas:** Choose between Concierge Mode (realistic local guides) and Game Mode (mystical/run-time personas) adapting tone and narrative focus on the fly.
+- **Dynamic Personas:** Choose between Concierge Mode (realistic local guides) and Game Mode (mystical/run-time personas) adapting tone and narrative focus on the fly. There's also local personas depending on the user AR location, street view.
 - **Real-time Context Processing:** Uses a Live Agent Orchestrator to stream dialogue & voice directly tied to user actions and spatial events.
 - **Immersive Storytelling:** Generates contextual narratives overlaid seamlessly onto the UI and 3D environment.
 
