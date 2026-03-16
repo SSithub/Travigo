@@ -7,7 +7,7 @@ Where live agents meet immersive storytelling and 3D navigation
 
 ## Project Description
 
-Travigo is a **next-generation AI Agent** that utilizes multimodal inputs and outputs, moving far beyond simple text-in/text-out interactions. The project leverages Google's Live API along with the creative power of generative AI and spatial context to solve complex problems and create entirely new, immersive user experiences in 3D navigation and storytelling.
+Travigo is a **next-generation AI Agent** that utilizes multimodal inputs and outputs, moving far beyond simple text-in/text-out interactions. The project leverages Google's Gen AI SDK, Gemini Live API, Gemini 3, Google Maps API cloud services with the creative power of generative AI and spatial context to solve complex problems and create entirely new, immersive user experiences in 3D navigation and storytelling.
 
 ### Features & Functionality
 - **Multimodal Interactions:** Communicate via voice and text while the AI processes real-time visual context from the interactive Street View and 3D map spatial data.
