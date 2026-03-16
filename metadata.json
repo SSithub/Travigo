@@ -1,0 +1,7 @@
+{
+  "name": "Travigo",
+  "description": "Travigo: A Spatial Intelligence Engine powered by Gemini 3 Pro and Photorealistic 3D Maps.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
