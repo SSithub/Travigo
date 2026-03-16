@@ -49,7 +49,7 @@ graph TD
             Game["🎲 Game Mode\n(Mystical/Object Personas)"]:::modeNode
         end
         
-        subgraph Personas["🎭 Persona Engine\n(Casting Director / Dungeon Master)"]
+        subgraph Personas["🎭 Persona Engine (Casting Director / Dungeon Master)"]
             P1["🤠 E.g., The Adventurer (Concierge)"]:::personaNode
             P2["🧐 E.g., The Historian (Concierge)"]:::personaNode
             P3["� E.g., Spirit of the Landmark (Game)"]:::personaNode
